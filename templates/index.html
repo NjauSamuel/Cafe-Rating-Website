@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafes List</title>
+</head>
+<body>
+    <h1>List of Cafes</h1>
+
+    <form action="/search" method="get">
+        <input type="text" name="loc" placeholder="Enter location" value="{{ query_location }}" required>
+        <button type="submit">Search</button>
+    </form>
+
+    <ul>
+        {% for cafe in cafes %}
+            <li>
+                <h2>{{ cafe.name }}</h2>
+                <p>Location: {{ cafe.location }}</p>
+                <p>Seats: {{ cafe.seats }}</p>
+                <p>Can take calls: {{ cafe.can_take_calls }}</p>
+                <p>Coffee price: {{ cafe.coffee_price }}</p>
+                <p>Has sockets: {{ cafe.has_sockets }}</p>
+                <p>Has toilet: {{ cafe.has_toilet }}</p>
+                <p>Has wifi: {{ cafe.has_wifi }}</p>
+                <img src="{{ cafe.img_url }}" alt="Image of {{ cafe.name }}" style="max-width: 200px;">
+                <p><a href="{{ cafe.map_url }}" target="_blank">View on map</a></p>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
