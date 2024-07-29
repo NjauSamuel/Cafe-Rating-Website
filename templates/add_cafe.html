@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Cafe</title>
-</head>
-<body>
-    <h1>Add a New Cafe</h1>
-    <form action="/add" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Add Cafe</title>
+   </head>
+   <body>
+      <h1>Add a New Cafe</h1>
+      <form action="/add" method="post">
+         <label for="name">Name:</label>
+         <input type="text" id="name" name="name" required /><br />
 
-        <label for="map_url">Map URL:</label>
-        <input type="url" id="map_url" name="map_url" required><br>
+         <label for="map_url">Map URL:</label>
+         <input type="url" id="map_url" name="map_url" required /><br />
 
-        <label for="img_url">Image URL:</label>
-        <input type="url" id="img_url" name="img_url" required><br>
+         <label for="img_url">Image URL:</label>
+         <input type="url" id="img_url" name="img_url" required /><br />
 
-        <label for="loc">Location:</label>
-        <input type="text" id="loc" name="loc" required><br>
+         <label for="loc">Location:</label>
+         <input type="text" id="loc" name="loc" required /><br />
 
-        <label for="sockets">Has Sockets:</label>
-        <input type="checkbox" id="sockets" name="sockets"><br>
+         <label for="sockets">Has Sockets:</label>
+         <input type="checkbox" id="sockets" name="sockets" /><br />
 
-        <label for="toilet">Has Toilet:</label>
-        <input type="checkbox" id="toilet" name="toilet"><br>
+         <label for="toilet">Has Toilet:</label>
+         <input type="checkbox" id="toilet" name="toilet" /><br />
 
-        <label for="wifi">Has Wifi:</label>
-        <input type="checkbox" id="wifi" name="wifi"><br>
+         <label for="wifi">Has Wifi:</label>
+         <input type="checkbox" id="wifi" name="wifi" /><br />
 
-        <label for="calls">Can Take Calls:</label>
-        <input type="checkbox" id="calls" name="calls"><br>
+         <label for="calls">Can Take Calls:</label>
+         <input type="checkbox" id="calls" name="calls" /><br />
 
-        <label for="seats">Seats:</label>
-        <input type="text" id="seats" name="seats" required><br>
+         <label for="seats">Seats:</label>
+         <input type="text" id="seats" name="seats" required /><br />
 
-        <label for="coffee_price">Coffee Price:</label>
-        <input type="text" id="coffee_price" name="coffee_price" required><br>
+         <label for="coffee_price">Coffee Price:</label>
+         <input
+            type="text"
+            id="coffee_price"
+            name="coffee_price"
+            required /><br />
 
-        <button type="submit">Add Cafe</button>
-    </form>
-</body>
+         <button type="submit">Add Cafe</button>
+      </form>
+   </body>
 </html>
